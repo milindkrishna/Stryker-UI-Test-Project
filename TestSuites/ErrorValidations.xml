@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" thread-count="10">
+
+	<groups>
+		<run>
+			<include name="ErrorHandling"></include>
+		</run>
+	</groups>
+	
+	<listeners>
+		<listener class-name="Stryker.com.TestComponents.Listeners" />
+	</listeners>
+	
+	<test thread-count="5" name="Submit Order Test">
+		<classes>
+			<class name="Stryker.com.testv1.submitOrderTest" />
+		</classes>
+	</test> <!--
+	Test -->
+
+	<test thread-count="5" name="Error Validation Test">
+		<classes>
+			<class name="Stryker.com.testv1.ErrorValidation" />
+		</classes>
+	</test>
+
+</suite> <!--
+Suite -->

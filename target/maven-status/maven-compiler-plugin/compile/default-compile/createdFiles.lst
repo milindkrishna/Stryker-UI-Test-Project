@@ -1,0 +1,8 @@
+stryker\pageobjects\CheckoutPage.class
+stryker\pageobjects\OrderPage.class
+Resources\ExtentReporterNG.class
+stryker\AbstractComponents\AbstractComponents.class
+stryker\pageobjects\ProductCatalogue.class
+stryker\pageobjects\ConfimationPage.class
+stryker\pageobjects\CartPage.class
+stryker\pageobjects\LandingPage.class

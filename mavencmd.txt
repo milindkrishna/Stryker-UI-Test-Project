@@ -1,0 +1,17 @@
+mvn test -PRegression
+
+mvn test -PPurchase
+
+mvn test -PErrorValidation
+
+mvn test -PRegression -Dbrowser=edge
+
+mvn test -PRegression -Dbrowser=firefox
+
+mvn test -PRegression -Dbrowser=chrome -Dheadless=true
+
+mvn test -PErrorValidation -Dbrowser=chromeheadless
+
+mvn test -PCucumberError -> to run cucumber tests for error validation
+
+mvn test -PRegression -> to run regression cucumber test
